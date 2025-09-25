@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Editkaro.in — Creative Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">Editkaro<span>.in</span></a>
+
+      <nav class="top-controls">
+        <div class="filters" id="filters">
+          <button data-filter="all" class="active">All</button>
+          <button data-filter="short">Short-form</button>
+          <button data-filter="long">Long-form</button>
+          <button data-filter="gaming">Gaming</button>
+          <button data-filter="football">Football</button>
+          <button data-filter="ads">E-Commerce Ads</button>
+          <button data-filter="docu">Documentary</button>
+          <button data-filter="color">Color Grading</button>
+          <button data-filter="anime">Anime</button>
+        </div>
+
+        <div class="search-wrap">
+          <button id="searchIcon" aria-label="Search">🔍</button>
+          <input id="search" type="search" placeholder="Search by title or tag..." />
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <h1>Showcasing Our Best Video Editing & Creative Work</h1>
+      <p>From <strong>short-form reels</strong> to <strong>long-form stories</strong>, 
+        <strong>gaming edits</strong> to <strong>football highlights</strong>, 
+        <strong>ads</strong>, <strong>documentaries</strong>, <strong>anime</strong>, 
+        and <strong>color grading</strong> — we craft visuals that connect with audiences.</p>
+      <div class="hero-cta">
+        <button id="showAll" class="btn">View All Work</button>
+        <a class="btn ghost" href="#contact">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <main class="portfolio container">
+    <div class="grid" id="grid">
+      <!-- Videos inserted by JS -->
+    </div>
+  </main>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact container">
+    <div class="contact-card">
+      <h3>Work with Editkaro.in</h3>
+      <p>We bring your ideas to life with storytelling, edits, and creativity. Let’s collaborate!</p>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your name" required />
+        <input type="email" id="email" placeholder="Email address" required />
+        <textarea id="message" rows="4" placeholder="Project details (brief)"></textarea>
+        <button class="btn" type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer container">
+    <div class="footer-inner">
+      <div>© <span id="year"></span> Editkaro.in — Crafted with passion</div>
+      <div class="footer-links">
+        <a href="#contact">Contact</a>
+        <a href="#">Privacy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
+
